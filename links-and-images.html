@@ -1,3 +1,4 @@
+<!-- DOCTYPE will break if you add a slash at the end. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,35 @@
 </head>
 <body>
     <h1>Merlin's Art and Magic Museum.</h1>
+    <!--
+        Paragraphs are an example of block elements because, by default,
+        they take up the entire width of the web page and add space at the
+        top and bottom of the element.
+    -->
     <p>"This web page shows the difference between block and inline elements!" - Merlin Last Name</p>
+    <p>Cool Merlin.</p>
     <!-- Merlin's Portal Room is just a way to add links. -->
     <h2>Merlin's Portal Room.</h2>
+    <p>A portal room Merlin uses to move around the world.</p>
+    <!--
+        Anchors are an example of inline elements because, by defualt, they
+        only take up the space that they need to.
+
+        We showed the difference between block and inline elements using Developer Tools,
+        which we accessed using Ctrl+Shift+I. Developer Tools is helpful to show you the width,
+        height, and spacing around an element.
+    -->
     <a href="index.html">A Portal To A Tree With A Name Tag. (Home Page.)</a>
+    <br />
+    <br />
     <a href="headings-and-paragraphs.html">A Portal To A Weirdly Warm Cave. (Headings and Paragraphs Page.)</a>
+    <br />
+    <br />
+    <a href="iframes-tables-and-lists.html">A Ladder That Leads To A Trapdoor. (IFrames, Tables and Lists Page.)</a>
+    <br />
+    <br />
     <!-- Merlin's Wikipedia Page. -->
-    <a href="https://en.wikipedia.org/wiki/Merlin" target="_blank">Merlin's Dusty Dictionary. (Merlin Wikipedia Page.)</a>
+    <a href="https://en.wikipedia.org/wiki/Merlin" target="_blank">Merlin's Dusty Wizard Diary. (Merlin Wikipedia Page.)</a>
     <!-- 
         This is an example of an image tag.
         The src attribute is the location of the image we want to display.
@@ -24,11 +47,18 @@
 
         Note: img is a self-closing tag.
     -->
+    <h3>Merlin's Art Gallery.</h3>
+    <p>A collection of art that Merlin made/stole during his trips around the world.</p>
     <img 
         src="images/ProdigyMan.webp"
         width="370px"
         height="393px"
-        alt="A front side view of the greedy blue 400x400 monster that Merlin despises. Orgin is Prodigy Math Game."
+        alt="A front view of a cute blue monster with a single tooth. 
+        The monster is the mascot of Prodigy Math Game. A web game used to help kids with math.
+        This image of the monster is in Merlin's art room because they're rivals in magic."
     />
+    <br />
+    <br />
+    <p>&#169; Einnar Jacob De Castro Ilag</p>
 </body>
 </html>
