@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Woah It's A Clock! And The Roman Numerals Are Breadsticks!</h1>
+    <p>As you're about to walk away a little peanut butter named Jiffy sneaks up on you.</p>
+    <p>"Hey goodlooking, thanks for coming. I gotta go meet my wife at the Space Jam Game. If you could set the time and keep time flowing for me, that'd be great!"</p>
+    <h2>"I'LL SEE YOU IN A JIFFY!"</h2>
+    <p>The peanut butter does a little wind up before scurrying away.</p>
+    <p>I guess you have to keep time moving.</p>
+    <h3>The Time Moving Machine. (It's smothered in Peanut Butter.)</h3>
+    <label for="date">What's The Date?</label>
+    <input type="date" name="current date" id="date time" required />
+    <br />
+    <br />
+    <label for="week">What's The Week?</label>
+    <input type="week" name="current week" id="week time" required />
+    <br />
+    <br />
+    <label for="month">What's The Month?</label>
+    <input type="month" name="current month" id="month time" required />
+    <br />
+    <br />
+    <label for="time">What's The Time?</label>
+    <input type="time" name="current time" id="time time" required />
+    <br />
+    <br />
+    <label for="datetime-local">What's The Datetime-Local?</label>
+    <input type="datetime-local" name="current datetime-local" id="datetime-local time" required />
+    <br />
+    <br />
+    <!--
+        A fieldset is an area in your form where you put inputs that are more related to each other
+        than they are related to other inputs in the form (i.e, a list of travel items is more
+        related to each other than the country the person is recommending.)
+
+        form is an important attribute to link the fieldset to the form it is related to.
+    -->
+    <fieldset form="fieldset" name="current fieldset">
+        <!--
+            A legend describes how the inputs inside the fieldset are all related.
+        -->
+        <legend>What's Your Favourite Things About Jiffy?</legend>
+        <!--
+            This is a checkbox input. Note, this is an input where the input typically comes
+            before the label.
+
+            type="checkbox", name and id are all required. The value attribute is also required
+            and provides its value to the server if the user checks that box and submits the form.
+            In this case, what would be passed to the server is Nutella=nutella.
+        -->
+        <input type="checkbox" name="Looks" id="look" value="look" />
+        <label for="look">His Looks</label>
+        <br />
+        <input type="checkbox" name="Personality" id="personality" value="personality" />
+        <label for="personality">His Personality!</label>
+        <br />
+        <input type="checkbox" name="Strength" id="strength" value="strength" />
+        <label for="strength">His Strength!</label>
+        <br />
+        <input type="checkbox" name="Work Ethic" id="work ethic" value="work ethic" />
+        <label for="work ethic">His Work Ethic!</label>
+        <br />
+        <input type="checkbox" name="Money" id="money" value="money" />
+        <label for="money">His Money!</label>
+        <br />
+        <br />
+    </fieldset>
+    <br />
+    <br />
+    <label for="image">Who's This Handsome Hunk Of Peanut Butter?</label>
+    <input type="image" src="Images/JIffy.jpg" width="100px" height="50px"id="image time" required />
+    <label for="Jiffy"></label>
+    <input type="text" name="current Jiffy" id="Jiffy?" required />
+    <br />
+    <br />
+    <fieldset form="travel">
+        <legend>What's Your Favourite Letter?</legend>
+        <!--
+            This is a radio button input, which are good when you want the user
+            to select one option from a list of options.
+
+            name, id and value are all required attributes. The value should represent
+            the choice the user has selected, Note, most importantly, the name attribute
+            for each related radio button should be exactly the same.
+
+            This is also an input where the label typically shows up after the input.
+        -->
+        <input type="radio" name="letter" id="A" value="A" />
+        <label for="A">A</label>
+        <input type="radio" name="letter" id="B" value="B" />
+        <label for="B">B</label>
+        <input type="radio" name="letter" id="C" value="C" />
+        <label for="C">C</label>
+        <input type="radio" name="letter" id="D" value="D" />
+        <label for="D">D</label>
+        <input type="radio" name="letter" id="E" value="E" />
+        <label for="E">E</label>
+        <input type="radio" name="letter" id="F" value="F" />
+        <label for="F">F</label>
+        <input type="radio" name="letter" id="G" value="G" />
+        <label for="G">G</label>
+        <input type="radio" name="letter" id="H" value="H" />
+        <label for="H">H</label>
+        <input type="radio" name="letter" id="I" value="I" />
+        <label for="I">I</label>
+        <input type="radio" name="letter" id="J" value="J" />
+        <label for="J">J</label>
+        <input type="radio" name="letter" id="K" value="K" />
+        <label for="K">K</label>
+        <input type="radio" name="letter" id="L" value="L" />
+        <label for="L">L</label>
+        <input type="radio" name="letter" id="M" value="M" />
+        <label for="M">M</label>
+        <input type="radio" name="letter" id="N" value="N" />
+        <label for="N">N</label>
+        <input type="radio" name="letter" id="O" value="O" />
+        <label for="O">O</label>
+        <input type="radio" name="letter" id="P" value="P" />
+        <label for="P">P</label>
+        <input type="radio" name="letter" id="Q" value="Q" />
+        <label for="Q">Q</label>
+        <input type="radio" name="letter" id="R" value="R" />
+        <label for="R">R</label>
+        <input type="radio" name="letter" id="S" value="S" />
+        <label for="S">S</label>
+        <input type="radio" name="letter" id="T" value="T" />
+        <label for="T">T</label>
+        <input type="radio" name="letter" id="U" value="U" />
+        <label for="U">U</label>
+        <input type="radio" name="letter" id="V" value="V" />
+        <label for="V">V</label>
+        <input type="radio" name="letter" id="W" value="W" />
+        <label for="W">W</label>
+        <input type="radio" name="letter" id="X" value="X" />
+        <label for="X">X</label>
+        <input type="radio" name="letter" id="Y" value="Y" />
+        <label for="Y">Y</label>
+        <input type="radio" name="letter" id="Z" value="Z" />
+        <label for="Z">Z</label>
+    </fieldset>
+    <label for="color">What's Your Favourite Colour?</label>
+    <input type="color" name="current color" id="color time" required />
+    <br />
+    <br />
+    <label for="file">What's Your Favourite File?<label>
+    <input type="file" name="current file" id="file time" required />
+    <br />
+    <br />
+    <!--
+        This is a textarea input. This allows a user to enter multiple lines of information
+        for a form.
+
+        name and id are required attributes.
+        HIghly recommended attributes are rows and cols. Rows defines the number of lines a
+        user can type before a scrollbar appears. cols defines the number of characters across
+        a user can type before their input goes to the next line.
+    -->
+    <label for="comments">What's Your Favourite?<label>
+    <input name="current comment" id="commment time" rows="10" cols="50" required />
+    <br />
+    <br />
+    <label for="hidden">What's?<label>
+    <input type="hidden" name="current hidden" id="hidden time" required />
+    <br />
+    <br />
+    <!--
+        This is a select input, which is essentially a dropdown input.
+
+        name and id are the required attributes for a select input.
+
+        Select inputs are widely used, but can lead to accessibility issues.
+        If you can acomplish the same thing you want to do with a different
+        type of input (i.e, radio buttons, text-based, etc.), you souhld use
+        the other method of getting this information.
+    -->
+    <label for="Farming simulator">If This Website Was A Farming Simulator, Who Would You Marry?</label>
+    <select name="countrySelect" id="country">
+             <!--
+                The option tag is the actual option that a user can select.
+                It requires the value attribute for when the selection gets sent to
+                the server.
+            -->
+            <option value="No One">Nobody</option>
+        <!-- 
+        optgroups let you group the options inside your select input.
+        label is required so that the optgroup displays what the category is
+        for the options that group.
+        -->
+        <optgroup label="Primary Characters">
+            <option value="Lucid James">sir Lucid James</option>
+            <option value="Jiffy">Jiffy</option>
+            <option value="Merlin">Merlin</option>
+            <option value="Prodigy Monster">Prodigy Monster</option>
+        </optgroup>
+        <optgroup label="Secondary Characters">
+            <option value="Talking Tree">Talking Tree With A Name Tag!</option>
+            <option value="Minnie Mouse">Minnie Mouse</option>
+            <option value="Dunkin Donuts">Dunkin Donuts</option>
+            <option value="Yokai Cave">Yokai Monster That's Making The Cave Warm</option>
+            <option value="Nutella">Nutella</option>
+            <option value="Elon Musk">Elon Musk</option>
+            <option value="Ro-Bro">Ro-Bro</option>
+            <option value="The Avengers">The Avengers</option>
+            <option value="Birds With Cameras">Birds With Cameras</option>
+        </optgroup>
+    </select>
+    <br />
+    <br />
+    <label for="range">What's Your Favourite Place That The #808080 Dot Would Go On?<label>
+    <input type="range" name="current range" id="range time" required />
+    <br />
+    <br />
+    <label for="search">What's Your Favourite 8 Character Sequence?<label>
+    <input type="search" name="current search" id="search time" minlength="8" maxlength="8" required />
+    <br />
+    <br />
+    <!--
+        This is a telephone input. type="tel", name and id are all required.
+        minlength and maxlength can be good attributes to use for some basic error-checking.
+    -->
+    <label for="telephone">Please Enter Your Favourite Hypothetical Telephone Number! [Example: 1-555-867-5309]</label>
+    <input type="tel" name="userTel" id="telephone" minlength="14" maxlength="22" />
+    <br />
+    <br />
+    <label for="url">What's Your Favourite URL?<label>
+    <input type="url" name="current url" id="url time" required />
+    <br />
+    <br />
+    <!--
+        This is an example of a submit button input. Note: This input has to be inside the form tag.
+        type="submit", name, and id are all required. value is optional for the same reason as reset.
+    -->
+    <input type="submit" name="submitButton" id="submit" value="Submit Time." />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--
+        This is an example of a reset button input. type="reset", name and id are all required.
+        value is an optional attribute for if you want to change the default text on the button.
+    -->
+    <input type="reset" name="clearForm" id="clear" value="Reset Time." />
+    <br />
+    <br />
+    <a href="james.html">sir Long Guy With Iced Tea James Posterizing Dunkin Donuts. (James Page.)</a>
+    <br />
+    <br />
+    <p>&#169; Einnar Jacob De Castro Ilag</p>
+</body>
+</html>
